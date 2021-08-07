@@ -1,0 +1,73 @@
+		----------- source control / version control systems -------------
+									----------------------------------------
+                  
+                  
+#GIT/GITHUB:
+-----------
+GitHub: Centralized server to store the source code
+Git:    tool to download/upload the code
+
+90% of the open source, source code is on git
+git --> #"Linus Torwalds".
+git bash --> CLI tool to download/upload code
+
+
+
+local workspace	---> index area	-----> staging area	----> gitHub Repository
+				add				commit				push
+
+index area		--> trak all the changes at local workspace
+staging area	--> commiting the changes to local repository and generates a key
+push			--> 
+
+
+git clone https://github.com/project.git		-->	1st time download all the code to local system
+
+git add .						-->	make track all the changes at local workspace
+
+git commit -m "give comment"	--> copying the changes from local repository to remote repository/gitHub		#generates key
+
+git push 						--> copy entire source code from local to remote repository/gitHub
+
+
+
+
+
+
+#commands:
+---------
+git config --global user.name "username"
+
+git config --global user.email "usergmail"
+
+git config --list
+
+git status		--> it will show the status
+
+git --version	--> git version
+
+git init	--> initialize git
+
+git clone https://github.com/project.git	--> 1st time download all the source code from gitHub to local system
+
+git add .									-->	make track all the changes at local workspace
+
+git commit -m "give comment"				--> copying the changes from local repository to remote repository/gitHub		#generates key
+
+git remote add origin https://github.com/veera-090/git-notes.git
+
+git remote
+
+git push 							--> copy entire source code from local to remote repository/gitHub
+
+git branch							--> To see available branches
+
+git branch <new name of branch>		-->	create a new branch
+
+git checkout <branch name>			--> move to present branch to another branch
+
+git push -u origin <branch name>	--> create new branch at gitHub and push the code to gitHub 
+
+git merge <branch name>				--> merge new branch to the master		#merge must done from master branch only
+
+git branch --delete <branch name>	--> delete/remove branch
